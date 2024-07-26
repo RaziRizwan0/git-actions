@@ -32,7 +32,7 @@ jobs:
 
     - name: Run Docker container
       run: |
-        docker run -d -p 3000:3000 yourusername/your-repo-name:latest
+        docker run -d -p 3000:3000 raziriz/gitactions:latest
         sleep 5
         curl -f http://localhost:3000 || exit 1
 
